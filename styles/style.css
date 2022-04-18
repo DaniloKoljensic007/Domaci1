@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  width: 100%;
 }
 
 header {
@@ -15,6 +14,7 @@ p {
 
 h2 {
   margin: 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 #header {
@@ -141,7 +141,7 @@ h2 {
   color: #3d2514;
   font-size: 2rem;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   margin-bottom: 8rem;
 }
 
@@ -174,21 +174,226 @@ ul {
 #order-burgers {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 2rem 0 2rem;
 }
 
 #order-burgers li {
   margin: 1.5rem;
   padding: 1rem;
+  box-shadow: 2rem 0rem 2rem gray;
 }
 
 #order-burgers li img {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .h2-title {
+  margin: 1rem;
+  color: #3d2514;
+  font-size: 1.7rem;
+}
 
-    
+.subtitle {
+  margin: 1rem;
+  color: #3d2514;
+  font-size: 1.1rem;
+}
 
+.btn-order {
+  font-family: "Alfa Slab One", sans-serif;
+  background-color: rgb(235, 52, 52);
+  color: white;
+  border: 0;
+  padding: 1.2rem 2rem 1.2rem 2rem;
+  margin: 1.5rem;
+}
+
+#book-Table {
+  margin: 4rem;
+  margin-left: 0;
+  text-align: center;
+  position: relative;
+}
+
+#book-Table span {
+  font-size: 2rem;
+  color: #3d2514;
+  font-weight: 500;
+}
+
+#book-Table h2 {
+  font-size: 4rem;
+  margin: 0.5rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
+input {
+  width: 15rem;
+  display: block;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 0.1rem solid gray;
+}
+
+input ::placeholder {
+  color: black;
+}
+
+#book-form {
+  display: flex;
+  justify-content: center;
+}
+
+#book-table {
+  font-family: "Alfa Slab One", sans-serif;
+  background-color: rgb(235, 52, 52);
+  color: white;
+  border: 0;
+  width: 17.2rem;
+}
+
+#bottle {
+
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    height: 15rem;
+}
+
+#form-burger {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12rem;
+    height: 12rem;
+    margin-left: -1rem;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+
+    #nav-bar {
+
+        display: grid;
+        
+        grid-template-columns: max-content;
+
+    }
+
+    header {
+
+        overflow-x: hidden;
+    }
+
+    #header {
+
+        flex-direction: column;
+        width: 40%; 
+        
+        
+    }
+
+    #content-burger {
+
+        grid-template-columns: 100%;
+        margin: 0;
+        margin-left: 3rem;
+        width: 70%;
+        height: 70%;
+    }
+
+    #burger-1 img {
+        padding: 0;
+        padding-top: 2rem;
+        width: 120%;
+        overflow: hidden;
+
+    }
+
+    #burgers  {
+
+        width: 70%;
+        
+    }
+
+    #burgers  img {
+
+        width: 180%;
+        height: 180%;
+    }
+
+
+   #tasty-burgers {
+
+        width: 70%;
+        font-size: rem;
+        
+
+   }  
+
+   #tasty-burgers p {
+
+    font-size: 1rem;
+    text-align: center;
+
+   }
+
+
+  #order-burgers {
+    display: grid;
+    grid-template-columns: 100%;
+    box-shadow: 1rem 1rem 2rem gray;
+    width: 75%;
+  }
+
+  #form-burger {
+
+    height: 5rem;
+    width: 5rem;
+
+  }
+
+  #bottle {
+
+    position: absolute;
+    top: 8rem;
+    left: 15rem;
+    height: 7rem;
+
+  }
+
+  #order-burgers li {
+    box-shadow: none;
+  }
+
+  #order-burgers li img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  #book-form {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+  #book-form input {
+    margin-left: 0;
+  }
 }
