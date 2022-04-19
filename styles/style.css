@@ -198,10 +198,8 @@ ul {
 #slideshow-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80rem;
-  height: 30rem;
   padding: 0;
-  margin: 0 0 0 2rem;
+  margin: 3rem;
   align-content: center;
   box-shadow: 5px 10px 8px #888888;
 }
@@ -245,9 +243,10 @@ ul {
 
 #slideshow-right img {
   float: right;
-  width: 40rem;
+  width: 100%;
   height: 27.5rem;
   padding-right: 3rem;
+  object-fit: contain;
 }
 
 #book-Table {
@@ -255,7 +254,7 @@ ul {
   margin-left: 0;
   text-align: center;
   position: relative;
-  width: ma;
+  
 }
 
 #book-Table span {
@@ -317,7 +316,7 @@ footer {
   background-image: url("/images/footer/Place\ Your\ Desi\ \(1\).png");
   font-family: "Beba Neue", sans-serif;
   background-repeat: no-repeat;
-  width: auto;
+  
 }
 
 #logo {
@@ -371,19 +370,19 @@ footer p {
   margin-left: 0.75rem;
 }
 
-/*slideshow*/
+/* slideshow*/
 
-/* @media only screen  and (max-width: 768px) {
+@media only screen  and (max-width: 768px) {
 
+  
 
   footer {
 
     width: 90%;
-
+    overflow-x: hidden;
   }
 
   #content-burger {
-    margin: 10rem;
     grid-template-columns: 100%;
     align-items: center;
   }
@@ -417,13 +416,14 @@ footer p {
 @media only screen and (max-width: 480px) {
 
   footer {
-    width: 100%;
     flex-direction: row;
     margin: 0;
     font-size: 1rem;
-    height: 400%;
+  
 
   }
+
+  
 
   #footer-content {
     flex-direction: row;
@@ -431,7 +431,7 @@ footer p {
 
   #nav-bar {
     display: grid;
-    grid-template-columns: max-content;
+    grid-template-columns: 100%;
     width: auto;
     justify-content: flex-start;
   }
@@ -468,6 +468,47 @@ footer p {
     
   }
 
+  #slideshow-content {
+
+    grid-template-columns: 100%;
+    margin: 0;
+    margin-top: 2rem;
+   
+  
+  }
+
+  #slideshow-left {
+
+    padding: 0;
+    width: 100%;
+
+  }
+
+  #slideshow-left #lipso{
+
+    margin: 0;
+    width: 100%;
+    font-size: 1rem;
+    line-height: normal;
+    box-sizing: border-box;
+
+  }
+  
+  
+  #slideshow-right {
+
+    width: 90%;
+    height: 70%;
+    /* padding-left: 5rem; */
+    
+
+  }
+  #slideshow-right img{
+
+   width: 100%;
+    
+  }
+
  
   #tasty-burgers {
     width: 70%;
@@ -480,10 +521,10 @@ footer p {
   }
 
   #order-burgers {
-    display: grid;
+
     grid-template-columns: 100%;
     box-shadow: 1rem 1rem 2rem gray;
-    width: 75%;
+    width: 90%;
   }
 
   #form-burger {
@@ -513,4 +554,4 @@ footer p {
   #book-form input {
     margin-left: 0;
   }
-} */
+}
