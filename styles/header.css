@@ -25,6 +25,10 @@ h2 {
   width: 100%;
 }
 
+#whole-content {
+  display: flex;
+}
+
 #header-content {
   font-family: "Alfa Slab One", sans-serif;
   color: #3d2514;

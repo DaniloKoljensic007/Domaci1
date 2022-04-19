@@ -16,18 +16,15 @@
 #burger-2 img {
   width: 25rem;
   margin-bottom: 2rem;
-
 }
 
 #burger-3 img {
   width: 25rem;
-
 }
 
 nav a:hover {
-
   background-color: rgb(225, 166, 55);
- 
+
   cursor: pointer;
 }
 
@@ -289,6 +286,14 @@ footer p {
     font-size: 2rem;
   }
 
+  #whole-content {
+    flex-direction: column;
+  }
+
+  #whole-content img {
+    width: 6rem;
+  }
+
   footer {
     flex-direction: row;
     margin: 0;
@@ -297,28 +302,21 @@ footer p {
   }
 
   #footer-logo {
-
-
     width: 10rem;
-    
   }
 
   #logo {
-
     padding-right: 0;
   }
 
   #address {
-
-    margin: 0 ;
+    margin: 0;
   }
 
   #logo p {
-
     font-size: 1rem;
     padding: 0;
   }
-  
 
   #footer-content {
     flex-direction: row;
@@ -354,6 +352,7 @@ footer p {
 
   #content-burger {
     grid-template-columns: 100%;
+    gap: 2rem;
   }
 
   #slideshow-content {
@@ -427,20 +426,22 @@ footer p {
   }
 }
 
-@media  screen and (min-width: 768px) and (max-device-width: 1000px) {
-
-
+@media screen and (min-width: 768px) and (max-device-width: 1000px) {
   body {
-
     align-items: center;
   }
 
   header {
-
     overflow-x: hidden;
   }
 
+  #whole-content {
+    flex-direction: column;
+  }
 
+  #whole-content img {
+    width: 10rem;
+  }
 
   #header-content p {
     width: 50%;
@@ -454,11 +455,9 @@ footer p {
     font-size: 2rem;
   }
 
-
   #content-burger {
     grid-template-columns: 100%;
   }
-
 
   #order-burgers {
     grid-template-columns: 100%;
@@ -494,6 +493,7 @@ footer p {
 
   #content-burger {
     grid-template-columns: 100%;
+    gap: 2rem;
   }
 
   #slideshow-content {
@@ -566,7 +566,6 @@ footer p {
     margin-left: 0;
   }
 
-  
   footer {
     width: 100%;
     overflow-x: hidden;
@@ -574,9 +573,6 @@ footer p {
   }
 
   #address {
-    
-
     padding-left: 1rem;
   }
-
 }
