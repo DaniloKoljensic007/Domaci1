@@ -68,6 +68,10 @@ ul {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+#content-order #order-burgers img:hover {
+  transform: translateY(-2rem);
+}
+
 #order-burgers li {
   margin: 1.5rem;
   padding: 1rem;
@@ -98,6 +102,11 @@ ul {
   border: 0;
   padding: 1.2rem 2rem 1.2rem 2rem;
   margin: 1.5rem;
+}
+
+
+#content-order #order-burgers .btn-order:hover {
+  transform: scale(1.50);
 }
 
 #slideshow-content {
@@ -282,16 +291,21 @@ footer p {
     font-size: 3rem;
   }
 
+  #whole-content {
+
+    grid-template-columns: 100%;
+
+  }
+
+  #whole-content #header-pictures img {
+
+    width: 70%;
+    height: 30%;
+
+  }
+
   #header-content h2 {
     font-size: 2rem;
-  }
-
-  #whole-content {
-    flex-direction: column;
-  }
-
-  #whole-content img {
-    width: 6rem;
   }
 
   footer {
@@ -385,7 +399,7 @@ footer p {
 
   #tasty-burgers {
     width: 70%;
-    font-size: rem;
+    font-size: 1rem;
   }
 
   #tasty-burgers p {
@@ -398,6 +412,7 @@ footer p {
     box-shadow: 1rem 1rem 2rem gray;
     width: 90%;
   }
+
 
   #form-burger {
     height: 5rem;
@@ -426,12 +441,8 @@ footer p {
   }
 
   footer span {
-
     font-size: 0.4rem;
-
   }
-
-  
 }
 
 @media screen and (min-width: 768px) and (max-device-width: 1000px) {
@@ -461,6 +472,39 @@ footer p {
 
   #header-content h2 {
     font-size: 2rem;
+  }
+
+  #whole-content {
+    flex-direction: column;
+  }
+  */ #whole-content {
+    grid-template-columns: 100%;
+  }
+
+  #whole-content #header-content {
+    width: 100%;
+  }
+
+  #whole-content #header-pictures {
+    width: 100%;
+  }
+
+  #whole-content .ff {
+    margin-left: 5rem;
+    width: 10rem;
+    height: 25rem;
+  }
+
+  #whole-content .dri {
+
+    margin: 2rem auto;
+    width: 5rem;
+  }
+
+  #whole-content .bur {
+    margin: 0;
+    width: 10rem;
+    height: 12rem;
   }
 
   #content-burger {
@@ -571,7 +615,7 @@ footer p {
   }
 
   #book-form input {
-    margin-left: 0;
+    margin: 2rem auto;
   }
 
   footer {

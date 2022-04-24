@@ -3,6 +3,7 @@ header {
   padding: 2rem;
   padding-bottom: 10rem;
   margin: 0;
+  height: 50rem;
 }
 
 p {
@@ -26,8 +27,50 @@ h2 {
 }
 
 #whole-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
+#whole-content #header-content {
+  float: left;
+  /* width: auto;
+  height: auto; */
+  font-family: "Alfa Slab One", sans-serif;
+  color: #3d2514;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 6rem 6rem 6rem 0rem;
+}
+
+#whole-content #header-pictures {
+  float: right;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+#header-pictures .ff {
+  /* float: right; */
+  margin-top: 8rem;
+  margin-left: 2rem;
+  position: absolute;
+  z-index: 1;
+}
+
+#header-pictures .dri {
+  /* float: right; */
+  margin-left: 23rem;
+  position: absolute;
+  z-index: 2;
+}
+
+#header-pictures .bur {
+  /* float: right; */
+  margin-left: 8rem;
+  margin-top: 15rem;
+  position: absolute;
+  z-index: 2;
+} 
 
 #header-content {
   font-family: "Alfa Slab One", sans-serif;
