@@ -287,6 +287,12 @@ footer p {
     width: 50%;
   }
 
+  header {
+
+    height: 80rem;
+
+  }
+
   #header-content h1 {
     font-size: 3rem;
   }
@@ -299,9 +305,16 @@ footer p {
 
   #whole-content #header-pictures img {
 
-    width: 50%;
+    width: 60%;
+    height: 50%;
 
   }
+
+  #whole-content #header-pictures .dri {
+
+    display: none;
+  }
+ 
 
   #header-content h2 {
     font-size: 2rem;
